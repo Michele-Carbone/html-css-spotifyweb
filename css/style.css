@@ -1,0 +1,169 @@
+/*utilitis*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.d-flex{
+    display: flex;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.wrapper{
+    height: calc(100vh - 80px);
+    background-color: blue;
+}
+
+/*Nav-bar*/
+nav{
+    width: 230px;
+    background-color: black;
+}
+
+/*header*/
+header{
+    width: calc(100% - 200px);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0, 0, 0.5);
+}
+
+/*Main*/
+main{
+    flex-grow: 1;
+    background-color: yellow;
+}
+
+/*utilitis footer*/
+.footer-margin{
+    margin: auto 5px;
+}
+
+
+/*footer*/
+footer{
+    background-color: #333;
+    height: 80px;
+}
+
+.footer-aside{
+    width: 20%;
+}
+
+.footer-center{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column ;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-img{
+    width: 15%;
+    vertical-align: middle;
+}
+
+.title-img{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.8rem;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.name-them-top {
+    color: white;
+}
+
+.name-them-down {
+    color: rgb(100, 100, 100);
+}
+
+.footer-aside i{
+    color: rgb(100, 100, 100) ;
+    margin-left: 15px;
+}
+
+#play-them-top i{
+    color: white;
+    margin: 10px 10px;
+}
+
+.fa-play-circle{
+    font-size: 25px;
+}
+
+#play-them-down {
+    color: white;
+}
+
+#time{
+    font-size: 0.7rem;
+}
+
+#play-them-down .progress-bar{
+    display: inline-block;
+    vertical-align: middle;
+    height: 5px;
+    background-color:rgb(100, 100, 100);
+    width: 700px;
+    margin: 0 20px;
+    position: relative;
+
+}
+#play-them-down .progress-bar .value{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    border-radius: 0px 5px 5px 0;
+    width: 30%;
+}
+
+.footer-aside .progress-bar{
+    display: inline-block;
+    vertical-align: middle;
+    height: 5px;
+    background-color:rgb(100, 100, 100);
+    width: 100px;
+    margin: 0 20px;
+    position: relative;
+
+}
+.footer-aside .progress-bar .value{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    border-radius: 0px 5px 5px 0;
+    width: 30%;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-right i{
+    color: white;
+}
