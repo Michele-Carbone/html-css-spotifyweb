@@ -19,6 +19,13 @@
 .d-flex{
     display: flex;
 }
+.mg-10{
+    margin: 10px;
+}
+
+.pd-10{
+    padding: 10px 0;
+}
 
 body{
     font-family: sans-serif;
@@ -26,7 +33,7 @@ body{
 
 .wrapper{
     height: calc(100vh - 80px);
-    background-color: blue;
+    background-color: rgb(22, 20, 20);
 }
 
 /*Nav-bar*/
@@ -35,9 +42,66 @@ nav{
     background-color: black;
 }
 
+#logo{
+    width: 70%;
+    margin: 20px 10px;
+}
+
+nav{
+    color: white;
+}
+
+#main-menu ul {
+    list-style-type: none;
+}
+
+#main-menu a{
+    text-decoration: none;
+    border-left: 5px solid transparent;
+    padding: 10px 10px;
+    color: rgb(100, 100, 100);
+}
+
+#main-menu a:hover{
+    border-color: green;
+}
+
+#main-menu i{
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+h3{
+    margin: 20px 0 10px 15px;
+    color: white;
+}
+
+.playlist{
+    color:rgb(100, 100, 100) ;
+    
+}
+
+.playlist i{
+    font-size: 50px;
+    margin: 0 15px;
+    color: rgba(100, 100, 100, 1);
+    vertical-align: middle;
+}
+
+.playlist ul{
+    list-style-type: none;
+}
+
+.playlist li{
+    color:rgb(100, 100, 100);
+    margin: 20px 15px;
+
+}
+
 /*header*/
 header{
-    width: calc(100% - 200px);
+    width: calc(100% - 230px);
     height: 100px;
     position: fixed;
     top: 0;
@@ -48,7 +112,6 @@ header{
 /*Main*/
 main{
     flex-grow: 1;
-    background-color: yellow;
 }
 
 /*utilitis footer*/
@@ -123,7 +186,7 @@ footer{
     vertical-align: middle;
     height: 5px;
     background-color:rgb(100, 100, 100);
-    width: 700px;
+    width: 500px;
     margin: 0 20px;
     position: relative;
 
