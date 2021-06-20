@@ -51,22 +51,22 @@ nav{
     color: white;
 }
 
-#main-menu ul {
+#nav-bar ul{
     list-style-type: none;
 }
 
-#main-menu a{
+#nav-bar a{
     text-decoration: none;
     border-left: 5px solid transparent;
     padding: 10px 10px;
     color: rgb(100, 100, 100);
 }
 
-#main-menu a:hover{
+#nav-bar a:hover{
     border-color: green;
 }
 
-#main-menu i{
+#nav-bar i{
     color: white;
     font-size: 30px;
     margin: 0 10px;
@@ -101,17 +101,94 @@ h3{
 
 /*header*/
 header{
-    width: calc(100% - 230px);
     height: 100px;
+    /*width: calc(100% - 230px);
     position: fixed;
     top: 0;
-    right: 0;
+    right: 0;*/
     background-color: rgba(0,0, 0, 0.5);
+    text-align: right;
+    margin-bottom: 20px;
+
 }
 
-/*Main*/
+header button{
+    color: white;
+    background-color:rgba(0,0, 0, 0.5);
+    border-color: white;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+/*main brani*/
 main{
     flex-grow: 1;
+    overflow: scroll;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: center;
+}
+.main-menu ul{
+    list-style-type: none;
+}
+.main-menu li{
+    display: inline;
+    margin-right: 10px;
+}
+
+.main-menu a{
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 10px;
+    color: rgb(100, 100, 100);
+}
+
+.main-menu a:hover{
+    border-color: green;
+}
+
+/*Brani*/
+h2{
+    color: white;
+    font-weight: 900;
+    margin: 30px 0 5px 10px;
+}
+
+.personal-playlist p{
+    color:rgb(100, 100, 100);
+    margin: 0 0 30px 10px;
+    font-weight: 700;
+}
+
+#them{
+    display: flex;
+}
+
+
+#them img{
+    width: calc(100% - 20px);
+}
+
+.them-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-lg-2{
+    width: calc( 100% / 12 * 2);
+}
+
+#them h5{
+    color: white;
+    margin: 20px 5px 10px 10px;
+}
+
+#them p{
+    color:rgb(100, 100, 100);
 }
 
 /*utilitis footer*/
