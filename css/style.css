@@ -19,6 +19,7 @@
 .d-flex{
     display: flex;
 }
+
 .mg-10{
     margin: 10px;
 }
@@ -67,6 +68,7 @@ nav{
 
 #nav-bar a:hover{
     border-color: green;
+    color: white;
 }
 
 #nav-bar i{
@@ -86,6 +88,7 @@ nav{
 #user .user-name{
     font-weight: 700;
 }
+
 #user i{
     margin: 10px;
 }
@@ -95,6 +98,10 @@ nav{
     height: 2px;
     width: 200px;
     margin: 10px 0;
+}
+
+#user .app:hover{
+    color: white;
 }
 
 h3{
@@ -121,7 +128,16 @@ h3{
 .playlist li{
     color:rgb(100, 100, 100);
     margin: 20px 15px;
+}
 
+.playlist a{
+    text-decoration: none;
+    color:rgb(100, 100, 100);
+}
+
+.playlist i:hover,
+.playlist a:hover{
+    color: white;
 }
 
 /*header*/
@@ -143,7 +159,7 @@ header button{
     border-color: white;
     border-radius: 20px 20px 20px 20px;
     padding: 10px 30px;
-    margin-top: 20px;
+    margin: 20px 10px;
 }
 
 /*main brani*/
@@ -156,9 +172,11 @@ main{
     display: flex;
     justify-content: center;
 }
+
 .main-menu ul{
     list-style-type: none;
 }
+
 .main-menu li{
     display: inline;
     margin-right: 10px;
@@ -173,8 +191,9 @@ main{
 
 .main-menu a:hover{
     border-color: green;
+    color: white;
 }
-
+    
 /*Brani*/
 h2{
     color: white;
@@ -195,6 +214,29 @@ h2{
 
 #them img{
     width: calc(100% - 20px);
+}
+/*hover immagine non completa*/
+.play-hover i{
+    background-color: gray;
+    color: white;
+}
+
+.play-hover {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.them-flex:hover .image {
+    opacity: 0.3;
+}
+  
+.them-flex:hover .play-hover {
+    opacity: 1;
 }
 
 .them-flex{
